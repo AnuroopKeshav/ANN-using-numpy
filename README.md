@@ -55,12 +55,12 @@ The learning process of ANN model comprises of two main steps.
 
 * Let us first consider a single perceptron in the first hidden layer.
 
-	<img src="https://latex.codecogs.com/svg.latex?\Large&space;a_{1}=\sigma_{0}(w_{0}x_{0}+w_{1}x_{1}+w_{2}x_{2}+...+w_{n}x_{n}+b_{0})"/>
-
+	$$a_{1} = \sigma_{0} (w_{0} x_{0} + w_{1} x_{1} + w_{2} x_{2} + ... + w_{n} x_{n} + b_{0})$$
+	
 * Also expressed as
 
-	<img src="https://latex.codecogs.com/svg.latex?\Large&space;a_{1}=\sigma_{0}(z_{0}=(\sum_{i=0}^{n}w_{i}x_{i}+b_{0}))"/>
-
+	$$a_{1} = \sigma_{0} (z_{0} = (\sum_{i = 0} ^ {n} w_{i} x_{i} + b_{0}))$$
+	
 * Where,
 
     * a₁ is the output value of the first hidden layer (single perceptron).
@@ -72,8 +72,8 @@ The learning process of ANN model comprises of two main steps.
 
 * Since there are multiple perceptrons in the hidden layers, we use matrix to get all the values simultaneously.
 
-	<img src="https://latex.codecogs.com/svg.latex?\Large&space;A_{1[m\times&space;n_{1}]}=(\sigma_{0}(W_{0[n_{1}\times&space;n_{0}]}\cdot&space;X_{[m\times&space;n_{0}]}^{T}%20+%20B_{0[n_{1}]}))^{T}"/>
-
+	$$A_{1[m \times n_{1}]} = (\sigma_{0} (W_{0 [n_{1} \times n_{0}]} \cdot X_{[m \times n_{0}]} ^ {T} + B_{0 [n_{1}]})) ^ {T}$$
+	
 * Where,
 
     * A₁ is the output matrix of the first hidden layer and the input to the second hidden layer.
@@ -92,9 +92,8 @@ The learning process of ANN model comprises of two main steps.
 
 * Average error for the last layer is calculated using the cost function
 
-	<img src="https://latex.codecogs.com/svg.latex?\Large&space;C.F=\frac{1}{2m}\sum_{i=0}^{m}(a_{pi}-y_{i})^2"/>
-	(single perceptron version)
-
+	$$C.F = \frac{1}{2 m} \sum_{i = 0} ^ {m} (a_{pi} - y_{i}) ^ 2$$
+	
 * Where,
 
     * C.F is the cost function for the output layer.
@@ -106,8 +105,8 @@ The learning process of ANN model comprises of two main steps.
 
 * The matrix interpretation would be
 
-	<img src="https://latex.codecogs.com/svg.latex?\Large&space;C.F=(A_{p[m\times&space;n_{p}]}-Y_{[m\times&space;n_{p}]})^2"/>
-
+	$$C.F = (A_{p[m \times n_{p}]} - Y_{[m \times n_{p}]}) ^ 2$$
+	
 * Where,
 
     * C.F is the cost function for the output layer.
